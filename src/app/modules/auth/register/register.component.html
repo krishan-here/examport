@@ -1,0 +1,65 @@
+<div class="form-container">
+  <h3 class="text-center heading">Welcome {{ userData?.fullName }}!</h3>
+  <form [formGroup]="registerForm">
+    <div class="form-group m-3 mt-0">
+      <input
+        type="email"
+        class="form-input"
+        formControlName="email"
+        placeholder="Enter Email"
+        email
+        required
+      />
+    </div>
+    <div class="form-group m-3">
+      <input
+        type="text"
+        class="form-input"
+        formControlName="mobileNumber"
+        placeholder="Enter Mobile Number"
+        minlength="10"
+        maxlength="10"
+        required
+      />
+    </div>
+    <div class="form-group m-3">
+      <input
+        type="text"
+        class="form-input"
+        formControlName="collegeName"
+        placeholder="Enter college name"
+        required
+      />
+    </div>
+    <div class="form-group m-3">
+      <input
+        type="password"
+        class="form-input"
+        name="password"
+        formControlName="password"
+        placeholder="Enter Password"
+        required
+        (input)="passwordChange($event)"
+      />
+    </div>
+    <div class="form-group m-3">
+      <input
+        type="password"
+        class="form-input"
+        name="confirmPassword"
+        (input)="passwordChange($event)"
+        placeholder="Confirm Password"
+      />
+    </div>
+    <div class="custom-btn m-3">
+      <button
+        class="btn"
+        [disabled]="registerForm.invalid || isPasswordInvalid"
+        (click)="onSubmitForm()"
+        routerLink="/profile"
+      >
+        Create
+      </button>
+    </div>
+  </form>
+</div>

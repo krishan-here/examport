@@ -1,0 +1,184 @@
+.nav-section{
+  background-color: var(--backcolor);
+  padding: 2% 10%;
+  a{
+    font-size: x-large;
+  }
+  .navbar-brand{
+    font-size: xx-large;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .custom-collapse{
+    margin-left: 300px;
+  }
+
+}
+.hero{
+  padding: 5%;
+  background-color:var(--backcolor);
+  color: #fff;
+  .hero-title{
+    font-size: 55px;
+    padding: 0% 10%;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.3;
+    font-weight: 900;
+    p{
+      font-size:15px;
+      font-weight: normal;
+    }
+  }
+  .buttons{
+    padding: 3% 12%;
+
+    button{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      width: 150px;
+      border: 2px solid #fff;
+    }
+    button:hover{
+      color: var(--backcolor);
+    }
+  }
+  .image{
+    padding: 0% 10%;
+    width: 80%;
+    position: relative;
+    bottom: 50px;
+  }
+}
+.title{
+  h2{
+    font-family: 'Ubuntu';
+    font-weight: bolder;
+    font-size: 50px;
+    display: inline-block;
+    padding: 0 10px;
+    border-bottom: 2px solid var(--backcolor);
+  }
+  text-align: center;
+  margin-bottom: 100px;
+}
+.features{
+  padding: 10% 5%;
+  background-color: var(--backcolor);
+  color: #fff;
+  .title{
+    h2{
+      border-bottom: 2px solid #fff;
+    }
+  }
+  .feature-item{
+    text-align: center;
+    line-height: 1.6;
+    width: 350px;
+    height: fit-content;
+    margin: auto;
+    color: black;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 2px 2px 18px 6px rgb(0 0 0 / 12%);
+    h4,p{
+      text-align: center;
+    }
+    h4{
+      margin-bottom: 20px;
+    }
+    p{
+      color: rgb(102, 100, 100);
+    }
+    img{
+      position: relative;
+      bottom: 40px;
+    }
+
+  }
+}
+
+.about-section{
+  padding: 10% 5%;
+  text-align: center;
+  .image{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    object-fit: contain;
+  }
+  .content{
+    background-color: var(--backcolor);
+    color: #fff;
+    height: 250px;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: left;
+    line-height: 2;
+    h3{
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    p{
+      font-size: large;
+    }
+  }
+}
+
+.faq-section{
+  padding: 10% 5%;
+  background-color: #f5f5f5;
+  .title{
+    margin-bottom: 0;
+  }
+  .content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h4{
+      font-family: 'Ubuntu';
+    }
+  }
+
+  .table{
+    background-color: var(--backcolor);
+    color: #fff;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 7px 1px darkgray;
+    transition: box-shadow 0.4s;
+    .question{
+      padding: 20px;
+      font-size: large;
+      border-bottom: 1px solid darkgray;
+      cursor: pointer;
+    }
+    .question:nth-child(1){
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .question:nth-last-child(1){
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+    }
+    .question:hover{
+      background-color: var(--backcolor);
+    }
+  }
+  .table:hover{
+    box-shadow: 0px 0px 20px 1px rgb(165 167 171 / 97%);
+  }
+
+}
+
+.footer-section{
+  background-color: var(--backcolor);
+  height: 300px;
+}

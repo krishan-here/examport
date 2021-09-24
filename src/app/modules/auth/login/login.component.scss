@@ -1,0 +1,208 @@
+.login{
+  padding: 2% 5%;
+  background-color: var(--backcolor);
+  font-size: large;
+  .shift{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    color: #fff;
+    .box{
+        position: relative;
+        cursor: pointer;
+        width: 70px;
+        height: 30px;
+        background-color: #f5f5f5;
+        box-shadow: inset 0 1px 4px rgb(0 0 0 / 10%), 0 0 0 transparent;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+      }
+      .circle{
+        position: absolute;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: blueviolet;
+      }
+      &-text{
+        position: absolute;
+        font-size: large;
+        margin: 0 2%;
+        font-weight: 500;
+      }
+      .register-text{
+        left: -90px;
+      }
+      .login-text{
+        left: 80px;
+      }
+
+  }
+  .register{
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(169, 169, 169, 0.274) 0px 1px 2px, darkgray 0px 2px 8px;
+    text-align: center;
+    padding: 5%;
+
+      .setup{
+        height: 450px;
+
+      }
+      .users{
+        display: flex;
+        justify-content: space-around;
+        padding: 2%;
+      }
+      .user{
+        width: 200px;
+        cursor: pointer;
+        height: 150px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px #8080808a;
+        img{
+          width: 80%;
+          height: 80%;
+          object-fit: contain;
+        }
+      }
+      .click-user{
+        background-color: var(--backcolor);
+        box-shadow: inset 0px 0px 5px #8080808a;
+        color: #fff;
+      }
+  }
+  .register-image{
+    width: 100%;
+    height: 500px;
+    // background-color: var(--backcolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+      img{
+        width: 20%;
+        height: auto;
+        position: absolute;
+        bottom: 60px;
+      }
+      .person-image:nth-child(1){
+        left: 50px;
+        z-index: 3;
+      }
+      .person-image:nth-child(2){
+        left: 80px;
+        z-index: 0;
+        bottom: 100px;
+      }
+      .person-image:nth-child(3){
+        left: 250px;
+        z-index: 3;
+      }
+      .person-image:nth-child(4){
+        left: 280px;
+        bottom: 100px;
+        z-index: 2;
+      }
+      .person-image:nth-child(5){
+        left: 180px;
+        bottom: 90px;
+        z-index: 1;
+      }
+
+  }
+  .login-image{
+    width: 100%;
+    height: 500px;
+    // background-color: var(--backcolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    img{
+      width: 25%;
+      height: auto;
+      position: absolute;
+      bottom: 60px;
+    }
+
+    .person-image:nth-child(1){
+      left: 120px;
+      z-index: 1;
+    }
+    .person-image:nth-child(3){
+      left: 40px;
+      z-index: 2;
+    }
+    .person-image:nth-child(2){
+      left: 80px;
+      z-index: 3;
+    }
+    .person-image:nth-child(4){
+      right: 30px;
+      z-index: 2;
+    }
+    .person-image:nth-child(5){
+      right: 60px;
+      z-index: 1;
+    }
+    .person-image:nth-child(6){
+      right: 100px;
+      z-index: 1;
+    }
+
+  }
+  .form-container{
+    width: 100%;
+    height: 500px;
+    padding: 5%;
+    background-color: #fff;
+    box-shadow: rgba(169, 169, 169, 0.274) 0px 1px 2px, darkgray 0px 2px 8px;
+    border-radius: 10px;
+      h3{
+        color: rgb(60, 60, 60);
+      }
+      .custom-btn{
+        text-align: right;
+      }
+
+      .forgot-password{
+        color: rgb(27, 151, 252);
+        text-decoration: underline;
+        font-size:medium;
+      }
+
+  }
+}
+
+
+.form-input{
+  width: 100%;
+  height: 50px;
+  box-shadow: inset 0 1px 4px rgb(0 0 0 / 10%), 0 0 0 transparent;
+  border: none;
+  background-color: #f3f7f7;
+  padding: 2%;
+  // border-radius: 10px;
+}
+.form-input:focus{
+  outline: none;
+  border-bottom: 2px solid gray;
+}
+
+.gender{
+  text-align: left;
+  label{
+    margin:0% 5% 0 2%;
+  }
+}
+

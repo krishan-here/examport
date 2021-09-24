@@ -1,0 +1,153 @@
+<section class="login">
+  <div class="shift">
+    <div class="box" (click)="changeForm()">
+      <div
+        class="circle"
+        [ngStyle]="{ right: isLoginOpen ? '0' : '60%' }"
+      ></div>
+      <div class="shift-text register-text">Register</div>
+      <div class="shift-text login-text">Login</div>
+    </div>
+  </div>
+  <div class="row m-0">
+    <div class="col-7">
+      <div class="register" *ngIf="!isLoginOpen">
+        <ng-container *ngIf="!isUserRegister">
+          <form (ngSubmit)="submitForm()" #userForm="ngForm">
+            <div class="header"><h3>Create Account as:</h3></div>
+            <div class="users">
+              <div
+                class="user student"
+                (click)="registerData.type = studentUser"
+                [ngClass]="{ 'click-user': registerData.type === studentUser }"
+              >
+                <img src="assets/images/student.png" alt="student" />
+                <h4>Student</h4>
+              </div>
+              <div
+                class="user teacher"
+                (click)="registerData.type = teacherUser"
+                [ngClass]="{ 'click-user': registerData.type === teacherUser }"
+              >
+                <img src="assets/images/teacher.png" alt="teacher" />
+                <h4>Teacher</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div>
+                <div class="form-group mx-5 my-3">
+                  <input
+                    type="text"
+                    class="form-input"
+                    placeholder="Full Name"
+                    name="fullName"
+                    [(ngModel)]="registerData.fullName"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- <div class="col-6">
+            <div class="form-group m-4">
+              <input type="text" class="form-input" placeholder="Last Name" />
+            </div>
+          </div> -->
+            </div>
+            <div class="gender mx-5">
+              <h4>Select Gender</h4>
+              <input
+                class="form-check-input"
+                type="radio"
+                [(ngModel)]="registerData.gender"
+                name="gender"
+                id="male"
+                value="MALE"
+                required
+              />
+              <label for="male">Male</label>
+              <input
+                class="form-check-input"
+                type="radio"
+                [(ngModel)]="registerData.gender"
+                name="gender"
+                id="female"
+                value="FEMALE"
+                required
+              />
+              <label for="female">Female</label>
+              <input
+                class="form-check-input"
+                type="radio"
+                [(ngModel)]="registerData.gender"
+                name="gender"
+                id="other"
+                value="OTHER"
+                required
+              />
+              <label for="other">Others</label>
+              <div
+                class="custom-btn my-4"
+                *ngIf="userForm.valid && registerData.type !== null"
+              >
+                <button type="submit">Proceed</button>
+              </div>
+            </div>
+          </form>
+        </ng-container>
+        <div *ngIf="isUserRegister" class="setup">
+          <app-register [userData]="registerData"></app-register>
+        </div>
+      </div>
+      <div class="register-image" *ngIf="isLoginOpen">
+        <img
+          class="person-image"
+          src="assets/images/person1.svg"
+          alt="person1"
+        />
+        <img
+          class="person-image"
+          src="assets/images/person2.svg"
+          alt="person2"
+        />
+        <img
+          class="person-image"
+          src="assets/images/person3.svg"
+          alt="person3"
+        />
+        <img
+          class="person-image"
+          src="assets/images/person4.svg"
+          alt="person4"
+        />
+        <img
+          class="person-image"
+          src="assets/images/person6.svg"
+          alt="person6"
+        />
+      </div>
+    </div>
+    <div class="col-5">
+      <div class="login-image" *ngIf="!isLoginOpen"></div>
+      <div class="form-container text-center" *ngIf="isLoginOpen">
+        <h3 class="heading">Welcome back!</h3>
+        <form>
+          <div class="form-group m-4">
+            <input type="email" class="form-input" placeholder="Enter email" />
+          </div>
+          <div class="form-group m-4">
+            <input type="password" class="form-input" placeholder="Password" />
+          </div>
+          <div class="d-flex justify-content-between m-3">
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="check" />
+              <label class="form-check-label" for="check">Remember me</label>
+            </div>
+            <div class="forgot-password">Forgot your password?</div>
+          </div>
+          <div class="custom-btn m-3">
+            <button routerLink="/profile">login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

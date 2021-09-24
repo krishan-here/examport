@@ -1,0 +1,21 @@
+.form-container{
+  text-align: left;
+}
+
+.form-input{
+  width: 100%;
+  height: 50px;
+  box-shadow: inset 0 1px 4px rgb(0 0 0 / 10%), 0 0 0 transparent;
+  border: none;
+  background-color: #f3f7f7;
+  padding: 2%;
+}
+.form-input:focus{
+  outline: none;
+}
+input.ng-invalid.ng-touched{
+  border-bottom: 2px solid var(--bs-danger);
+}
+input.ng-valid{
+  border-bottom: 2px solid var(--bs-success);
+}

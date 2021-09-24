@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+:root{
+  --backcolor: #892be286;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+.heading{
+  font-family: 'Ubuntu', sans-serif;
+}
+
+// buttons
+.custom-btn{
+  button{
+    width: max-content;
+    padding: 2% 5%;
+    border-radius: 2px;
+    border: none;
+    background-color: blueviolet;
+    color: #fff;
+  }
+}
+.custom-outline-btn{
+  button{
+    padding: 2% 5%;
+    border-radius: 2px;
+    border: none;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+}
