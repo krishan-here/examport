@@ -25,3 +25,17 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+for running this app follow these steps.
+
+STEP 1: Download & Install node.js ref: https://nodejs.org/en/download/
+
+STEP 2: Install angular cli by run this command on cmd: npm install -g @angular/cli
+
+STEP 3: clone this repo by run this command: git clone https://github.com/krishan-here/examport.git
+
+STEP 4: go to examport folder by run this command: cd examport/
+
+STEP 5: run this command: ng serve
+
+STEP 6: go to browser and type url: http://localhost:4200/
